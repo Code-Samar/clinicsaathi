@@ -1,0 +1,26 @@
+/* ═══════════════════════════════════════
+   DESIGN TOKENS
+═══════════════════════════════════════ */
+:root {
+  --ink:    #09141F;
+  --ink2:   #0F1E2D;
+  --ink3:   #162333;
+  --gold:   #C4973C;
+  --gold2:  #D9AE5A;
+  --gold3:  #EDD080;
+  --cream:  #F5F1E8;
+  --cream2: #EAE5D8;
+  --cream3: #DDD7C8;
+  --muted:  #647484;
+  --text:   #1A2B3C;
+  --white:  #FFFFFF;
+  --green-soft: #2E7D5E;
+  --red-soft:   #8B3033;
+
+  --f-display: 'Cormorant Garamond', Georgia, serif;
+  --f-ui:      'Syne', sans-serif;
+  --f-body:    'DM Sans', sans-serif;
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+}
