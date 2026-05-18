@@ -10,7 +10,10 @@ export function useScrollReveal() {
 
   onMounted(() => {
     window.addEventListener('scroll', reveal, { passive: true })
-    nextTick(reveal)
+    // nextTick alone is too early — the page-transition animation (400ms) hasn't
+    // finished, so getBoundingClientRect() returns 0 for elements not yet painted.
+    // Wait for transition to complete before running the first reveal pass.
+    nextTick(() => setTimeout(reveal, 450))
   })
 
   onUnmounted(() => {
