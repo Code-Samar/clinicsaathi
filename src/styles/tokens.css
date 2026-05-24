@@ -1,0 +1,35 @@
+:root {
+  /* ── Surfaces ── */
+  --ink:    #080C10;
+  --ink2:   #0D1218;
+  --ink3:   #131A22;
+  --ink4:   #1A2330;
+
+  /* ── Rose Gold accent ── */
+  --rg:     #B8876A;
+  --rg2:    #CA9E82;
+  --rg3:    #E2BDA4;
+  --rg-dim: rgba(184,135,106,.12);
+  --rg-glow:rgba(184,135,106,.25);
+
+  /* ── Neutral surfaces ── */
+  --stone:  #F2EDE8;
+  --stone2: #E8E2DB;
+  --stone3: #D8D0C6;
+  --white:  #FFFFFF;
+  --muted:  #6E7A88;
+  --text:   #1C2732;
+
+  /* ── Semantic ── */
+  --green-soft: #2E7D5E;
+  --red-soft:   #8B3033;
+
+  /* ── Typography ── */
+  --f-display: 'Cormorant Garamond', Georgia, serif;
+  --f-ui:      'Syne', sans-serif;
+  --f-body:    'DM Sans', sans-serif;
+
+  /* ── Easing ── */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+}
