@@ -1,0 +1,8 @@
+<template>
+<section class="page-hero premium"><div class="container"><span class="eyebrow-pill">AI PATIENT OPERATIONS</span><h1>Five focused systems.<br><span>One connected</span> experience.</h1><p>Purpose-built AI agents for the repetitive patient communication and coordination your team handles every day.</p></div></section>
+<section class="section"><div class="container"><div class="row g-4">
+<div v-for="(p,i) in products" :key="p.slug" class="col-md-6"><article class="product-detail-card"><div class="product-card-top"><div class="mini-icon c1"><i :class="['bi',p.icon]"></i></div><span>0{{i+1}}</span></div><h2>{{p.name}}</h2><p class="lead">{{p.short}}</p><div class="capabilities"><span v-for="f in p.features.slice(0,5)" :key="f"><i class="bi bi-check2"></i>{{f}}</span></div><RouterLink class="arrow-link" :to="'/products/'+p.slug">Explore product <i class="bi bi-arrow-right"></i></RouterLink></article></div>
+</div></div></section>
+<section class="section soft"><div class="container"><div class="section-heading center"><span class="eyebrow-pill">CONNECTED PATIENT EXPERIENCE</span><h2>One layer around your existing workflow.</h2><p>Aipitals is designed to work alongside your clinic or diagnostic systems wherever supported.</p></div><div class="connection-map"><div>WhatsApp</div><div>Appointments</div><div class="map-core"><img src="/assets/aipitals-logo.png" alt="Aipitals"></div><div>Reminders</div><div>Feedback</div></div></div></section>
+</template>
+<script setup>import {products} from '../data/products'</script>
